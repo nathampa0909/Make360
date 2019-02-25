@@ -51,6 +51,48 @@ a, a:hover, a:active, a:visited {
   text-align: center;
 }
 
+/* CSS CARTOES DE VISITA */
+
+div.cartaoMake {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+img.make {
+  width: 150px;
+}
+
+div.cartaoMake p {
+  font-family: 'Times New Roman', Times, serif;
+  color: orangered;
+}
+
+div.cartaoCliente p {
+  font-family: 'Times New Roman', Times, serif;
+  color: orangered;
+}
+
+div.cartaoCliente {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+/* CSS CARTOES DE VISITA */
+
 .mobile #titleBar {
   height: 50px;
   right: 50px;
