@@ -22,6 +22,6 @@ window.onclick = function (event) {
     }
 }
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function(event) { 
     modal.style.display = "block";
-}
+});
