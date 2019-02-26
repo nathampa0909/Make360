@@ -1,41 +1,131 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        body {
-            margin: 0;
-        }
+<title>Biss Inn Hotel</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 
-        .holder {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
+<style> @-ms-viewport { width: device-width;} </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="make.css">
 
-        .frame {
-            border: 0;
-            width: 100%;
-            height: 100%
-        }
-
-        .holder footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-    </style>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="mdb.css">
 </head>
+<body class="multiple-scenes ">
 
-<body>
-    <div class="holder">
-        <iframe class="frame" src="view.html"></iframe>
-        <footer class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3">Make360 | Corretora de Imóveis XYZ</div>
-        </footer>
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="#" class="scene" data-id="0-entrada">
+        <li class="text">Entrada</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="1-recepo">
+        <li class="text">Recepção</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="2-trreo"> 
+        <li class="text">Térreo</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="3-hall">
+        <li class="text">Hall</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="4-bar">
+        <li class="text">Bar</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="5-piscina">
+        <li class="text">Piscina</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="6-sute">
+        <li class="text">Suíte</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="7-banheiro">
+        <li class="text">Banheiro</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="#" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="#" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="#" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="#" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="#" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="#" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="#" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="#" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<footer>
+    <div class="coluna1"><p>Make360</p> <p>(62) 99142-4224</p></div>
+    <div class="coluna2"><p>Biss Inn Hotéis</p> <p>(62) 99233-1566</p></div>
+</footer>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="titulo">Biss Inn Hotéis</h2>
+      </div>
+      <div class="modal-body">
+        <p id="texto">Este Hotel conta com uma ótima estrutura para todas as suas necessidades.</p>
+        <p id="texto">Ótima localização em Goiânia</p>
+        <p id="texto">Área com piscina.</p>
+        <p id="texto">Bar no hall.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="botao">Ver fotos</button>
+      </div>
     </div>
-</body>
+  </div>
 
+ <script src="modal.js"></script>
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
