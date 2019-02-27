@@ -29,6 +29,7 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+  var infoModalElemnt = document.querySelector('#infoModal');
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -243,6 +244,10 @@
       startAutorotate();
     }
   }
+
+  infoModalElemnt.addEventListener('click', function() {
+    $('#myModal').modal('show')
+  });
 
   function createLinkHotspotElement(hotspot) {
 
