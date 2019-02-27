@@ -795,6 +795,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         return Modal;
     }($);
+
+
+
 })));
 
 $('#myModal').modal('show')
