@@ -150,6 +150,7 @@
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
       toggleAutorotate();
     }
+    alert(navigator.userAgent)
 
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
