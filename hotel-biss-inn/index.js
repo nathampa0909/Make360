@@ -148,8 +148,7 @@
 
   // sdfhdklsdfghklsdfgvbklsgbksjjfbhklsdafhklsdfhklsadfhklsadfhklsdafhkljfvbnklsdfvbklwajdhfoçawhfoawrghoeghlçjfgvnl
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-      var info = document.getElementById("#autorotateToggle");
-      $(info).css("display", "block")
+      toggleAutorotate();
     }
 
   // Set handler for scene switch.
