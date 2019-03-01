@@ -146,13 +146,6 @@
     showSceneList();
   }
 
-  // sdfhdklsdfghklsdfgvbklsgbksjjfbhklsdafhklsdfhklsadfhklsadfhklsdafhkljfvbnklsdfvbklwajdhfoçawhfoawrghoeghlçjfgvnl
-  if (!document.body.classList.contains('mobile')) {
-    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-      document.getElementById("infoModal").style.right = "20px";
-    }
-  }
-
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');

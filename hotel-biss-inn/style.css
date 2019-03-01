@@ -172,7 +172,7 @@ body.fullscreen-enabled #fullscreenToggle {
 
 .mobile #infoModal .info {
   top: 10px;
-  right: 10px;
+  right: 30px;
 }
 
 #autorotateToggle {
