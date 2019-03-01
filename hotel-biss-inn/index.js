@@ -147,12 +147,10 @@
   }
 
   // sdfhdklsdfghklsdfgvbklsgbksjjfbhklsdafhklsdfhklsadfhklsadfhklsdafhkljfvbnklsdfvbklwajdhfoçawhfoawrghoeghlçjfgvnl
-  if (!document.body.classList.contains('mobile')) {
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
       var info = document.getElementById("infoModal");
       $(info).css("right", "50px")
     }
-  }
 
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
