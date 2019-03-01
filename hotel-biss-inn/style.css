@@ -165,14 +165,14 @@ body.fullscreen-enabled #fullscreenToggle {
 #infoModal .info {
   position: absolute;
   top: 5px;
-  right: 15px;
+  right: 5px;
   width: 30px;
   height: 30px;
 }
 
 .mobile #infoModal .info {
   top: 10px;
-  right: 30px;
+  right: 10px;
 }
 
 #autorotateToggle {
